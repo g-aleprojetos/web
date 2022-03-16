@@ -1,0 +1,9 @@
+
+.styleInput{
+    width: 300px;
+    height: 25px;
+    border: solid;
+    border-radius: 20px;
+    margin-top: 2px;
+    padding-left: 10px;
+}
