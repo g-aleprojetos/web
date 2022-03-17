@@ -1,18 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import Formulario from './pages';
 
-import Input from './component/input';
-import Botao from './component/botao'
 
 function App() {
   return (
     <ContainerBody>
-      <Input placeholder='nome'/>
-      <Input placeholder='sobrenome'/>
-      <Input type='email' placeholder='email'/>
-      <Input/>
-      <Botao cor='blue'>OK</Botao>
-      <Botao cor='red'>Cancel</Botao>
+      <Formulario />
     </ContainerBody>
   );
 };

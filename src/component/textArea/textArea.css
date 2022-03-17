@@ -1,0 +1,10 @@
+
+
+.styleTextArea{   
+    width: 300px;
+    height: 25px;
+    margin: 15px;
+    border: solid;
+    border-radius: 20px;
+    padding-left: 10px;
+}
