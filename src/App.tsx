@@ -1,12 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import Formulario from './pages';
+import Planta from './pages/mapa';
 
+export type ComodoStaus = {
+  sala: 'C' | 'NC',
+  cozinha: 'C' | 'NC' | undefined,
+  banheiro: 'C' | 'NC' | undefined,
+  hall: 'C' | 'NC' | undefined,
+  quarto1: 'C' | 'NC' | undefined,
+  quarto2: 'C' | 'NC' | undefined,
+}
 
 function App() {
+
+  const [comodos, setComodos] = useState({} as ComodoStaus)
+
+  useEffect(()=>{
+
+    setComodos({...comodos,sala:'C',cozinha:'NC'})
+  },[comodos])
+
   return (
     <ContainerBody>
-      <Formulario />
+      <Planta handleComodos={comodos}  />
     </ContainerBody>
   );
 };

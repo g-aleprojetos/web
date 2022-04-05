@@ -1,8 +1,8 @@
 import * as React from 'react';
 import './formulario.css';
-import Botao from '../component/botao';
-import Input from '../component/input';
-import TextArea from '../component/textArea';
+import Botao from '../../component/botao';
+import Input from '../../component/input';
+import TextArea from '../../component/textArea';
 
 function Formulario() {
     return (
